@@ -1,4 +1,4 @@
-//Alex Foster 2/1/17
+
 //Xmas tree creator
 public class ChristmasTree {
     public static void main(String[] args) {
