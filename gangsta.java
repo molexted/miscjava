@@ -1,4 +1,4 @@
-//Jonah and Alex
+////
 //1/31/17
 import java.util.*;//imports console reading methods
 public class gangsta {
