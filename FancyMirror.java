@@ -1,4 +1,4 @@
-//Alex Foster and Jonah Huang 1/24/17
+//????????
 public class FancyMirror {//it's just bigger/smaller, not even sure why it's fancy anyway
 	public static int scalar = 25;//embiggens the noblest spirit, or at the very least gives them a bigger mirror
 	public static void main(String[] args){
