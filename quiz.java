@@ -40,10 +40,10 @@ public static void quiz(){
 			System.out.println("You may have passed Calc 2, but where were you in Calc 1?");
 		}
 		else{
-			System.out.println("You may want to consider that degree in literary criticism");
+			System.out.println("You may want to consider that degree in literary criticism.");
 		}	
 	}
-	if(correct==2){
+	else if(correct==2){
 		if(hard == true){
 			System.out.println("Derivatives appearently weren't integral to your sucess.");
 		}
@@ -51,7 +51,7 @@ public static void quiz(){
 			System.out.println("You need to step it up, Math 151 rookie!");
 		}
 	}
-	if(correct==3){
+	else{
 		System.out.println("You looked at the source code!");
 	}
 }
