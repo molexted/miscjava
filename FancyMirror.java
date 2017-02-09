@@ -1,6 +1,6 @@
 //????????
 public class FancyMirror {//it's just bigger/smaller, not even sure why it's fancy anyway
-	public static int scalar = 25;//embiggens the noblest spirit, or at the very least gives them a bigger mirror
+	public static int scalar = 25;//embiggens the smallest mirror
 	public static void main(String[] args){
 		Line();//calls Line();
 		Loop();//calls Loop();
@@ -21,7 +21,6 @@ public class FancyMirror {//it's just bigger/smaller, not even sure why it's fan
 		}
 		System.out.println("#");//#=========# is a terrible hashtag
 	}
-	
 	public static void Loop() {
 		/*This is some magic code right here
 		 * It takes in a single constraint scalar
@@ -51,19 +50,20 @@ public class FancyMirror {//it's just bigger/smaller, not even sure why it's fan
 			for(int spaces=1; spaces<=line*2-2;spaces++){
 				System.out.print(" ");
 			}
-			System.out.print("<>");//compact html parser
+			System.out.print("<>");//html everywhere
 			for(int dots=1; dots<=line*-4+scalar*4;dots++){
 				System.out.print(".");
 			}
-			System.out.print("<>");
+			System.out.print("<>");//everywhere
 			for(int spaces=1; spaces<=line*2-2;spaces++){
 				System.out.print(" ");
 			}
 			System.out.print("|\n");
 		}
-
 	}
 }
 /* This is the end of the file 
  * 
+ *
+ *
  * j/k going to end on line 69 haha */
