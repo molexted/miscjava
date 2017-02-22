@@ -1,4 +1,4 @@
-//Alex Foster and Jonah Huang 2/21/17
+
 import java.util.*;//import scanner
 public class digitSum {
 public static void main(String[] args){
