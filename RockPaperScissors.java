@@ -1,4 +1,4 @@
-
+//Alex Foster and Luiz Caixeta 2/23/16
 //All commented println lines were for debug
 import java.util.*;
 public class RockPaperScissors {
@@ -16,10 +16,10 @@ public class RockPaperScissors {
 	while(repeat){
 		String a= input();//user
 		int b= RandInt();//computer
-		int a1 = nameToInt(a);//user
+		int userIntValue = nameToInt(a);//user
 		String b1 = intToName(b);//computer
 		//System.out.println("You "+a1);
-		String winState= win(a1,b);
+		String winState= win(userIntValue,b);
 		System.out.println("Computer chose "+b1);
 		System.out.println("You "+winState);
 		repeat = repeat();
@@ -27,7 +27,7 @@ public class RockPaperScissors {
 		losses = collectLoss(winState,losses);
 		ties = collectTie(winState,ties);
 		games = games+1;
-		cheated = collectCheater(winState, cheated);
+		cheated = collectCheater(userIntValue, cheated);
 		//System.out.println(games);
 		}
 		System.out.println(displayStats( wins, losses, ties, games, cheated));
@@ -158,8 +158,8 @@ public class RockPaperScissors {
 		return b;
 	
 	}
-	public static int collectCheater(String a, int b){
-		if(a.equals("are completely lost")){
+	public static int collectCheater(int a, int b){
+		if(a == 3){
 			b = b+1;
 			//System.out.println(b+"3");
 		}
@@ -170,7 +170,7 @@ public class RockPaperScissors {
 		
 		double pct=wins*100/total;
 		String stats = "";
-		if(cheated>0){
+		if(cheated == 0){
 			stats = ("total games = "+total+"\n       wins = "+wins+"\n     losses = "+losses+
 					"\n       ties = "+ties+"\n    win pct = "+pct+"%"); //prints accepted values in human-readable format
 		}
